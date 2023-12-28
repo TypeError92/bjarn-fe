@@ -3,7 +3,7 @@ export function MyYarnPage(){
     return (
         <>
             <h1>MY YARN</h1>
-            <ul>
+            <ul className="my-yarn__list">
                 {yarnEntries.map(({caption, content}, i) => {
                     return (<li key={i}>
                         <h2>{caption}</h2>
