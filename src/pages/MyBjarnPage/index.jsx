@@ -9,7 +9,6 @@ export function MyBjarnPage(){
         <>
             <h1>myBjarn</h1>
             <ul className="yarn-list">
-
                 {yarnEntries.map(({yarnName, yarnInfo}, i) => {
                     return (<li key={i}>
                         <YarnListAccordionCard yarnName={yarnName} yarnInfo={yarnInfo}/>
