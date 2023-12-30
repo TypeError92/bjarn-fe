@@ -1,3 +1,21 @@
-.my-yarn__list {
+* {
+    border: solid red 1px;
+    border-radius: 4px;;
+}
+
+
+.yarn-list {
     list-style: none;
 }
+
+.yarn-list__accordion-card__body {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.accordion-card__header {
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
