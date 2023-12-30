@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from '../../assets/logo.svg'
 import {IoAddCircleOutline, IoRemoveCircleOutline} from 'react-icons/io5'
+import { GiWool } from "react-icons/gi";
 
 export function YarnListAccordionCard({yarnName, yarnInfo}){
     const [isOpen, setIsOpen] = useState(false)
@@ -18,7 +19,8 @@ function YarnListAccordionCardHeader({yarnName, isOpen, setIsOpen}){
 
     return (
         <div className="accordion-card__header">
-            <img className="accordion-card__header__img" src={logo}/>
+            <GiWool className="accordion-card__header__icon {
+" src={logo}/>
             <h2>{yarnName}</h2>
             {isOpen
             ? <IoRemoveCircleOutline className='accordion-card__header__icon' onClick={()=>{setIsOpen(false)}}/>
