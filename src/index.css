@@ -26,7 +26,7 @@
     height: 100px;
 }
 
-.accordion-card__header__button {
-    aspect-ratio: 1/1;
-    height: 100%;
+.accordion-card__header__icon {
+    height: 100px;
+    width: 100px;
 }

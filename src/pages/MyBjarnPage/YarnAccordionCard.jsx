@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from '../../assets/logo.svg'
+import {IoAddCircleOutline, IoRemoveCircleOutline} from 'react-icons/io5'
 
 export function YarnListAccordionCard({yarnName, yarnInfo}){
     const [isOpen, setIsOpen] = useState(false)
@@ -19,9 +20,9 @@ function YarnListAccordionCardHeader({yarnName, isOpen, setIsOpen}){
         <div className="accordion-card__header">
             <img className="accordion-card__header__img" src={logo}/>
             <h2>{yarnName}</h2>
-            <button className='accordion-card__header__button' onClick={buttonOnClick}>
-                {isOpen ? '-' : '+'}
-            </button>
+            {isOpen
+            ? <IoRemoveCircleOutline className='accordion-card__header__icon' onClick={()=>{setIsOpen(false)}}/>
+            : <IoAddCircleOutline className='accordion-card__header__icon' onClick={()=>{setIsOpen(true)}}/>}
         </div>
     )
 }
