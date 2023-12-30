@@ -1,0 +1,32 @@
+* {
+    border: solid red 1px;
+    border-radius: 4px;;
+}
+
+
+.yarn-list {
+    list-style: none;
+}
+
+.yarn-list__accordion-card__body {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.accordion-card__header {
+    align-content: space-between;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    height: 100px;
+}
+
+.accordion-card__header__img {
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    height: 100px;
+}
+
+.accordion-card__header__button {
+    aspect-ratio: 1/1;
+    height: 100%;
+}
