@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from '../../assets/logo.svg'
 
 export function YarnListAccordionCard({yarnName, yarnInfo}){
     const [isOpen, setIsOpen] = useState(false)
@@ -16,10 +17,11 @@ function YarnListAccordionCardHeader({yarnName, isOpen, setIsOpen}){
 
     return (
         <div className="accordion-card__header">
-            <button onClick={buttonOnClick}>
+            <img className="accordion-card__header__img" src={logo}/>
+            <h2>{yarnName}</h2>
+            <button className='accordion-card__header__button' onClick={buttonOnClick}>
                 {isOpen ? '-' : '+'}
             </button>
-            <h2>{yarnName}</h2>
         </div>
     )
 }

@@ -15,7 +15,18 @@
 
 .accordion-card__header {
     align-content: space-between;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    height: 100px;
 }
 
+.accordion-card__header__img {
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    height: 100px;
+}
+
+.accordion-card__header__button {
+    aspect-ratio: 1/1;
+    height: 100%;
+}
